@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
-    android:background="#FFECB3" android:layout_width="match_parent"
+    android:background="#B2DFDB" android:layout_width="match_parent"
     android:orientation="vertical"
     android:id="@+id/Math">
 
@@ -103,9 +103,10 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="     Time Management"
         android:id="@+id/mField3"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/mgood1"
+        android:layout_alignRight="@+id/mField1"
+        android:layout_alignEnd="@+id/mField1" />
 
     <Button
         style="?android:attr/buttonStyleSmall"

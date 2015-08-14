@@ -27,8 +27,7 @@
         android:id="@+id/usn_unique"
         android:hint="University Seat Number"
         android:layout_below="@+id/name_unique"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="44dp" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="match_parent"
@@ -50,9 +49,9 @@
         android:hint="Password"
         android:ems="10"
         android:id="@+id/password_unique"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/usn_unique"
-        android:layout_alignStart="@+id/usn_unique" />
+        android:layout_below="@+id/usn_unique"
+        android:layout_alignRight="@+id/usn_unique"
+        android:layout_alignEnd="@+id/usn_unique" />
 
     <TextView
         android:layout_width="wrap_content"

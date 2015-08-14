@@ -32,10 +32,9 @@
         android:text="Add New Student"
         android:id="@+id/addStud"
         android:background="#009688"
-        android:layout_below="@+id/teacherPassword"
+        android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/teacherPassword"
         android:layout_alignStart="@+id/teacherPassword"
-        android:layout_marginTop="67dp"
         android:layout_alignRight="@+id/teacherPassword"
         android:layout_alignEnd="@+id/teacherPassword" />
 

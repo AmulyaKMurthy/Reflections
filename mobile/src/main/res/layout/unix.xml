@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="#FFECB3"
+    android:background="#B2DFDB"
     android:id="@+id/unix">
 
     <TextView
@@ -103,9 +103,8 @@
         android:text="     Time Management"
         android:id="@+id/uField3"
         android:layout_below="@+id/ugood1"
-        android:layout_toLeftOf="@+id/uavg2"
-        android:layout_toStartOf="@+id/uavg2"
-        android:layout_marginTop="45dp" />
+        android:layout_alignRight="@+id/uField1"
+        android:layout_alignEnd="@+id/uField1" />
 
     <Button
         style="?android:attr/buttonStyleSmall"

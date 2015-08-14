@@ -36,21 +36,22 @@ public class Feedback extends Activity {
         good2 = (TextView) findViewById(R.id.mgoodR3);
         avg2 = (TextView) findViewById(R.id.mavgR3);
         exc2 = (TextView) findViewById(R.id.mexcR3);
-
-        ParseQuery<ParseObject> studentQuery = ParseQuery.getQuery("StudentDatabase");
-        studentQuery.whereEqualTo("Type", "student");
-        studentQuery.countInBackground(new CountCallback() {
-            public void done(int count, ParseException e) {
-                if (e == null) {
-                    // The count request succeeded. Log the count
-                    Log.d("feedback", "Total feedback " + count + " students");
-                    count1 = (float)count;
-                } else {
-                    // The request failed
-                    Log.d("feedback", "No student feedback");
+        {
+            ParseQuery<ParseObject> studentQuery = ParseQuery.getQuery("StudentDatabase");
+            studentQuery.whereEqualTo("Type", "student");
+            studentQuery.countInBackground(new CountCallback() {
+                public void done(int count, ParseException e) {
+                    if (e == null) {
+                        // The count request succeeded. Log the count
+                        Log.d("feedback", "Total feedback " + count + " students");
+                        count1 = (float) count;
+                    } else {
+                        // The request failed
+                        Log.d("feedback", "No student feedback");
+                    }
                 }
-            }
-        });
+            });
+        }
         if (subject.equals("Mathematics"))
             subString = "Math";
         else if(subject.equals("Graph Theory "))
@@ -129,7 +130,7 @@ public class Feedback extends Activity {
         ParseQuery<ParseObject> field2AvgQuery = ParseQuery.getQuery("StudentDatabase");
         field2AvgQuery.whereEqualTo("Type", "student");
         field2AvgQuery.whereEqualTo(subString + "Field2", "average");
-        field1AvgQuery.countInBackground(new CountCallback() {
+        field2AvgQuery.countInBackground(new CountCallback() {
             public void done(int countAvg2, ParseException e) {
                 if (e == null) {
                     // The count request succeeded. Log the count
