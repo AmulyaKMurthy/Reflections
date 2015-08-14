@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Reflections</string>
+    <string name="action_settings">Settings</string>
+    <string name="radio_bad">Good</string>
+    <string name="radio_average">Average</string>
+    <string name="radio_good">Excellent</string>
+
+</resources>

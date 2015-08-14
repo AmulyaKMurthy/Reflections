@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:background="#FFECB3" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/Math">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Subject name : Mathematics"
+        android:id="@+id/mathTitle"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="     Subject Knowledge"
+        android:id="@+id/mField1"
+        android:layout_below="@+id/mathTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good"
+        android:id="@+id/mgood"
+        android:layout_below="@+id/mField1"
+        android:layout_toLeftOf="@+id/mavg"
+        android:layout_toStartOf="@+id/mavg" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average"
+        android:id="@+id/mavg"
+        android:layout_above="@+id/mField2"
+        android:layout_toLeftOf="@+id/mexcellent"
+        android:layout_toStartOf="@+id/mexcellent" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excellent"
+        android:id="@+id/mexcellent"
+        android:layout_alignTop="@+id/mavg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="     Attitude towards students"
+        android:id="@+id/mField2"
+        android:layout_below="@+id/mgood"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good"
+        android:id="@+id/mgood1"
+        android:layout_below="@+id/mField2"
+        android:layout_toLeftOf="@+id/mavg1"
+        android:layout_toStartOf="@+id/mavg1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average"
+        android:id="@+id/mavg1"
+        android:layout_alignTop="@+id/mgood1"
+        android:layout_alignLeft="@+id/mavg"
+        android:layout_alignStart="@+id/mavg" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excellent"
+        android:id="@+id/mexcellent1"
+        android:layout_alignTop="@+id/mavg1"
+        android:layout_alignRight="@+id/mexcellent"
+        android:layout_alignEnd="@+id/mexcellent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="     Time Management"
+        android:id="@+id/mField3"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good"
+        android:id="@+id/mgood2"
+        android:layout_below="@+id/mField3"
+        android:layout_alignLeft="@+id/mgood1"
+        android:layout_alignStart="@+id/mgood1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average"
+        android:id="@+id/mavg2"
+        android:layout_alignTop="@+id/mgood2"
+        android:layout_toLeftOf="@+id/mexcellent2"
+        android:layout_toStartOf="@+id/mexcellent2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excellent"
+        android:id="@+id/mexcellent2"
+        android:layout_alignTop="@+id/mavg2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Swipe for next subject>>"
+        android:id="@+id/mswipe"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/mexcellent2"
+        android:layout_alignRight="@+id/mathTitle"
+        android:layout_alignEnd="@+id/mathTitle"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp" />
+
+</RelativeLayout>
+

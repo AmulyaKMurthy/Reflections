@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2DFDB"
+    android:id="@+id/Student"
+    android:focusable="false">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/name_unique"
+        android:layout_marginTop="95dp"
+        android:layout_gravity="top"
+        android:hint="Name"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/usn_unique"
+        android:layout_alignStart="@+id/usn_unique" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapCharacters"
+        android:ems="10"
+        android:id="@+id/usn_unique"
+        android:hint="University Seat Number"
+        android:layout_below="@+id/name_unique"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/submit"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="112dp"
+        android:background="#009688"
+        android:layout_alignLeft="@+id/password_unique"
+        android:layout_alignStart="@+id/password_unique"
+        android:layout_alignRight="@+id/password_unique"
+        android:layout_alignEnd="@+id/password_unique" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:ems="10"
+        android:id="@+id/password_unique"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/usn_unique"
+        android:layout_alignStart="@+id/usn_unique" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="\n\nStudent Login"
+        android:id="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

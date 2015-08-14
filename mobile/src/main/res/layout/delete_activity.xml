@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2DFDB">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Student Name"
+        android:ems="10"
+        android:id="@+id/stud_name"
+        android:layout_marginTop="104dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapCharacters"
+        android:hint="Student USN"
+        android:ems="10"
+        android:id="@+id/stud_usn"
+        android:layout_below="@+id/stud_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Student Password"
+        android:ems="10"
+        android:id="@+id/stud_pass"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/stud_usn"
+        android:layout_alignLeft="@+id/stud_name"
+        android:layout_alignStart="@+id/stud_name" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Student"
+        android:id="@+id/del_stud"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/stud_pass"
+        android:background="#009688"
+        android:layout_alignLeft="@+id/stud_pass"
+        android:layout_alignStart="@+id/stud_pass"
+        android:layout_alignRight="@+id/stud_pass"
+        android:layout_alignEnd="@+id/stud_pass" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Student Deletion        "
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/del_stud"
+        android:layout_alignEnd="@+id/del_stud"
+        android:layout_marginTop="41dp" />
+
+</RelativeLayout>

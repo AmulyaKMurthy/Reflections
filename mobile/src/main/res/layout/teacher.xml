@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    android:background="#B2DFDB">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:ems="10"
+        android:id="@+id/teacherName"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:ems="10"
+        android:id="@+id/teacherPassword"
+        android:layout_below="@+id/teacherName"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Student"
+        android:id="@+id/addStud"
+        android:background="#009688"
+        android:layout_below="@+id/teacherPassword"
+        android:layout_alignLeft="@+id/teacherPassword"
+        android:layout_alignStart="@+id/teacherPassword"
+        android:layout_marginTop="67dp"
+        android:layout_alignRight="@+id/teacherPassword"
+        android:layout_alignEnd="@+id/teacherPassword" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete existing Student"
+        android:id="@+id/removeStud"
+        android:layout_marginTop="41dp"
+        android:background="#009688"
+        android:layout_below="@+id/addStud"
+        android:layout_alignLeft="@+id/addStud"
+        android:layout_alignStart="@+id/addStud"
+        android:layout_alignRight="@+id/addStud"
+        android:layout_alignEnd="@+id/addStud" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Teacher Login"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Feedback"
+        android:id="@+id/feedback"
+        android:layout_marginTop="41dp"
+        android:background="#009688"
+        android:layout_below="@+id/removeStud"
+        android:layout_alignRight="@+id/removeStud"
+        android:layout_alignEnd="@+id/removeStud"
+        android:layout_alignLeft="@+id/removeStud"
+        android:layout_alignStart="@+id/removeStud" />
+</RelativeLayout>

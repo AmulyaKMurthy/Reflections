@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/add_student"
+    android:background="#B2DFDB">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Student Name"
+        android:ems="10"
+        android:id="@+id/user_name"
+        android:layout_above="@+id/user_usn"
+        android:layout_alignLeft="@+id/user_usn"
+        android:layout_alignStart="@+id/user_usn" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapCharacters"
+        android:hint="University Seat Number"
+        android:ems="10"
+        android:id="@+id/user_usn"
+        android:layout_above="@+id/user_pass"
+        android:layout_alignLeft="@+id/con_pass"
+        android:layout_alignStart="@+id/con_pass" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:ems="10"
+        android:id="@+id/user_pass"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/user_usn"
+        android:layout_alignStart="@+id/user_usn" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        android:ems="10"
+        android:id="@+id/con_pass"
+        android:layout_below="@+id/user_pass"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/reg"
+        android:layout_marginBottom="57dp"
+        android:layout_alignParentBottom="true"
+        android:background="#009688"
+        android:layout_alignLeft="@+id/con_pass"
+        android:layout_alignStart="@+id/con_pass"
+        android:layout_alignRight="@+id/con_pass"
+        android:layout_alignEnd="@+id/con_pass" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Student Registeration"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/user_name"
+        android:layout_alignStart="@+id/user_name"
+        android:layout_marginTop="53dp" />
+
+</RelativeLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#B2DFDB">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Subject name : Graph Theory and Combinatorics"
+        android:id="@+id/gtTitle"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="     Subject Knowledge"
+        android:id="@+id/gtField1"
+        android:layout_below="@+id/gtTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good"
+        android:id="@+id/gtgood"
+        android:layout_toStartOf="@+id/gtavg"
+        android:layout_below="@+id/gtField1"
+        android:layout_toLeftOf="@+id/gtavg" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average"
+        android:id="@+id/gtavg"
+        android:layout_above="@+id/gtField2"
+        android:layout_toLeftOf="@+id/gtexcellent"
+        android:layout_alignLeft="@+id/gtavg2"
+        android:layout_alignStart="@+id/gtavg2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excellent"
+        android:id="@+id/gtexcellent"
+        android:layout_above="@+id/gtField2"
+        android:layout_alignRight="@+id/gtTitle"
+        android:layout_alignEnd="@+id/gtTitle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="     Attitude towards Students"
+        android:id="@+id/gtField2"
+        android:layout_below="@+id/gtgood"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good"
+        android:id="@+id/gtgood1"
+        android:layout_below="@+id/gtField2"
+        android:layout_toLeftOf="@+id/gtavg1"
+        android:layout_toStartOf="@+id/gtavg1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average"
+        android:id="@+id/gtavg1"
+        android:layout_alignTop="@+id/gtgood1"
+        android:layout_alignLeft="@+id/gtavg"
+        android:layout_alignStart="@+id/gtavg" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excellent"
+        android:id="@+id/gtexcellent1"
+        android:layout_alignTop="@+id/gtavg1"
+        android:layout_alignRight="@+id/gtexcellent"
+        android:layout_alignEnd="@+id/gtexcellent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="     Time Management"
+        android:id="@+id/gtField3"
+        android:layout_below="@+id/gtgood1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good"
+        android:id="@+id/gtgood2"
+        android:layout_below="@+id/gtField3"
+        android:layout_alignLeft="@+id/gtgood1"
+        android:layout_alignStart="@+id/gtgood1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average"
+        android:id="@+id/gtavg2"
+        android:layout_alignTop="@+id/gtgood2"
+        android:layout_toLeftOf="@+id/gtexcellent2"
+        android:layout_toStartOf="@+id/gtexcellent2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excellent"
+        android:id="@+id/gtexcellent2"
+        android:layout_alignTop="@+id/gtavg2"
+        android:layout_alignRight="@+id/gtTitle"
+        android:layout_alignEnd="@+id/gtTitle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Swipe for next subject>>"
+        android:id="@+id/gtswipe"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/gtexcellent2"
+        android:layout_alignRight="@+id/gtTitle"
+        android:layout_alignEnd="@+id/gtTitle"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp" />
+
+</RelativeLayout>

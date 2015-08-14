@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#FFECB3"
+    android:id="@+id/unix">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Subject name : Unix and Shell Programming"
+        android:id="@+id/uTitle"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="     Subject Knowlegde"
+        android:id="@+id/uField1"
+        android:layout_below="@+id/uTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good"
+        android:id="@+id/ugood"
+        android:layout_below="@+id/uField1"
+        android:layout_toLeftOf="@+id/uavg"
+        android:layout_toStartOf="@+id/uavg" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average"
+        android:id="@+id/uavg"
+        android:layout_above="@+id/uField2"
+        android:layout_toLeftOf="@+id/uexcellent"
+        android:layout_toStartOf="@+id/uexcellent" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excellent"
+        android:id="@+id/uexcellent"
+        android:layout_above="@+id/uField2"
+        android:layout_alignRight="@+id/uTitle"
+        android:layout_alignEnd="@+id/uTitle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="     Attitude towards Students"
+        android:id="@+id/uField2"
+        android:layout_below="@+id/ugood"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good"
+        android:id="@+id/ugood1"
+        android:layout_below="@+id/uField2"
+        android:layout_toLeftOf="@+id/uavg1"
+        android:layout_toStartOf="@+id/uavg1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average"
+        android:id="@+id/uavg1"
+        android:layout_alignTop="@+id/ugood1"
+        android:layout_alignLeft="@+id/uavg"
+        android:layout_alignStart="@+id/uavg" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excellent"
+        android:id="@+id/uexcellent1"
+        android:layout_alignTop="@+id/uavg1"
+        android:layout_alignRight="@+id/uexcellent"
+        android:layout_alignEnd="@+id/uexcellent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="     Time Management"
+        android:id="@+id/uField3"
+        android:layout_below="@+id/ugood1"
+        android:layout_toLeftOf="@+id/uavg2"
+        android:layout_toStartOf="@+id/uavg2"
+        android:layout_marginTop="45dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good"
+        android:id="@+id/ugood2"
+        android:layout_below="@+id/uField3"
+        android:layout_toLeftOf="@+id/uavg2"
+        android:layout_toStartOf="@+id/uavg2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average"
+        android:id="@+id/uavg2"
+        android:layout_above="@+id/home"
+        android:layout_toLeftOf="@+id/uexcellent2"
+        android:layout_toStartOf="@+id/uexcellent2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excellent"
+        android:id="@+id/uexcellent2"
+        android:layout_alignTop="@+id/uavg2"
+        android:layout_alignRight="@+id/uTitle"
+        android:layout_alignEnd="@+id/uTitle" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HOME"
+        android:id="@+id/home"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/ugood2"
+        android:layout_alignLeft="@+id/ugood2"
+        android:layout_alignStart="@+id/ugood2"
+        android:layout_toLeftOf="@+id/uexcellent2"
+        android:layout_toStartOf="@+id/uexcellent2" />
+
+
+</RelativeLayout>
