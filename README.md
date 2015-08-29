@@ -6,14 +6,15 @@ Feedback given by students can be viewed by teachers only. The feedback is the a
    The Teacher is given special privileges of adding new students and removing existing students from the database. This helps us prevent malicious users and avoid fake ids from being created. Teachers cannot be added through the app for the same reason.
 
 Dummy student records created are:
+
 1. Name: student1
-    Password:  pass1
+   Password:  pass1
 
 2. Name: student2
-    Password:  pass2
+   Password:  pass2
 
 3. Name: student3
-    Password:  pass3
+   Password:  pass3
 
 Dummy teacher records created are:
 
@@ -28,5 +29,6 @@ Dummy teacher records created are:
 
 
 To view the online database on Parse.com, the login details are
+
 email address: amulyakm@gmail.com
 password: whatever
