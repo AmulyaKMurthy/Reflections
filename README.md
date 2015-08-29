@@ -25,7 +25,8 @@ Dummy teacher records created are:
            
 3. Name: unix teacher
     Password: unixpassword
-          
+
+
 To view the online database on Parse.com, the login details are
-                          email address: amulyakm@gmail.com
-                          password: whatever
+email address: amulyakm@gmail.com
+password: whatever
